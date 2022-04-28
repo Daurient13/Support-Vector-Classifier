@@ -60,4 +60,15 @@ the test score reached 99%. remember every time we get a score that high, then w
 3. is the problem something simple
 
 In this case, what actually happened was an imbalanced dataset
+So what is an imbalanced dataset? Let's check Class value_count, here it says that:
+
+0 (Not Fraud)  = 30000
+
+1 (Fraud)      = 492
+
+it says, there are 30000 peoples who not make a Fraud, and 492 peoples who make a Fraud
+
+it means that if we make a baseline, assume that people do not commit fraud as much as 30000 if divided by the total data of 30492
+
+30000 / 30492 = 0.98, so we will get a score of 98% without doing anything, its because the baseline is very high due to imbalanced dataset
 
