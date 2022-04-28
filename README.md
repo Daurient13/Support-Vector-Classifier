@@ -16,7 +16,7 @@ V1 to V2
 
 Amount
 
-Class : 0 = Not fraud 1 = Fraud
+Class : 0 = Not fraud, 1 = Fraud
 
 # Explanation
 # Import Package
