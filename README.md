@@ -1,4 +1,3 @@
-
 # Support Vector Classifier
 
 In this project I will do a classification using the Support Vector Machine Algorithm. In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. SVMs are one of the most robust prediction methods, being based on statistical learning frameworks. The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence.
@@ -77,5 +76,8 @@ should be in a case like this Accuracy can't be used because it will deceive. if
 Yes, we will use F1-Score, After we run it again, it turns out that the F1-Score is 97 and this is pretty good, and already using the F1-Scoring which has considered the data imbalance.
 
 are we sure that this model is good? we will show it with Confusion Matrix.
+
+![confusionmatrix0](https://user-images.githubusercontent.com/86812576/165972874-bae85f11-275d-4bc3-ba39-f44417719913.png)
+
 
 The way to read the Confusion Matrix is ​​that we plot the actual vs prediction
