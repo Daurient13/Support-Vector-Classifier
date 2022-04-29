@@ -81,3 +81,18 @@ are we sure that this model is good? we will show it with Confusion Matrix.
 
 
 The way to read the Confusion Matrix is ​​that we plot the actual vs prediction
+Train score (0.981): 
+
+there are 23999 people we predict correctly that they are not doing fraud.
+and no one that we predict fraud turns out to be fraud. 
+
+Unfortunately, there are 15 people that we predicted did not commit fraud, they actually did fraud. and the last 379 people we predict fraud, and we catch them.
+
+Test score(0.990):
+
+there are 6001 people we predict correctly that they are not doing fraud.
+and no one that we predict fraud turns out to be fraud.
+
+and out of the 98 cheaters we caught 96 of them.
+
+this is actually a good model. because if we do it manually, it takes a lot of effort to do this.
