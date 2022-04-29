@@ -81,6 +81,7 @@ are we sure that this model is good? we will show it with Confusion Matrix.
 
 
 The way to read the Confusion Matrix is ​​that we plot the actual vs prediction
+
 Train score (0.981): 
 
 there are 23999 people we predict correctly that they are not doing fraud.
@@ -96,3 +97,30 @@ and no one that we predict fraud turns out to be fraud.
 and out of the 98 cheaters we caught 96 of them.
 
 this is actually a good model. because if we do it manually, it takes a lot of effort to do this.
+
+
+## improve using the class weight and tuning parameter
+0 = Not Fraud, 1 = Fraud. 
+
+[
+
+    {0: 0.05, 1: 0.95},
+
+    {0: 0.1, 1: 0.9},
+
+    {0: 0.25, 1: 0.75}
+]    
+ 
+
+We give the fraud a smaller weight, so as not to focus on that.
+
+tuning parameter:
+
+
+parameter = {
+
+    'algo__gamma': np.logspace(-3, 3, 7),
+    'algo__C': np.logspace(-3, 3, 7),
+    'algo__class_weight': [{0: x, 1: 1-x} for x in [0.05, 0.1, 0.25]]
+}
+
