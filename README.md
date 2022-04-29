@@ -70,14 +70,12 @@ it says, there are 30000 peoples who not make a Fraud, and 492 peoples who make 
 
 it means that if we make a baseline, assume that people do not commit fraud as much as 30000 if divided by the total data of 30492
 
-30000 / 30492 = 0.99, so we will get a score of 99% without doing anything, that's because the baseline is very high and we choose Accuracy to consider whether a model is good or not.
+30000 / 30492 = 0.98, so we will get a score of 98% without doing anything, its because the baseline is very high due to imbalanced dataset
 
 should be in a case like this Accuracy can't be used because it will deceive. if so, is there any other scoring besides accuracy?
 
 Yes, we will use F1-Score, After we run it again, it turns out that the F1-Score is 97 and this is pretty good, and already using the F1-Scoring which has considered the data imbalance.
 
-are we sure that this model is good?
-we will show it with
-Confusion Matrix.
+are we sure that this model is good? we will show it with Confusion Matrix.
 
 The way to read the Confusion Matrix is ​​that we plot the actual vs prediction
