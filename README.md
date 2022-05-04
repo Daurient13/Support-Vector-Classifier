@@ -22,25 +22,31 @@ Class : 0 = Not fraud, 1 = Fraud
 
 import common package:
 
-import numpy as np
+import **numpy as np**
 
-import pandas as pd
-
-
-from sklearn.model_selection import train_test_split
-
-from sklearn.pipeline import Pipeline
-
-from sklearn.compose import ColumnTransformer
+import **pandas as pd**
 
 
-from jcopml.utils import save_model, load_model
+from **sklearn.model_selection** import **train_test_split**
 
-from jcopml.pipeline import num_pipe, cat_pipe
+from **sklearn.pipeline** import **Pipeline**
 
-from jcopml.plot import plot_missing_value
+from **sklearn.compose** import **ColumnTransformer**
 
-from jcopml.feature_importance import mean_score_decrease
+
+from **jcopml.utils** import **save_model, load_model**
+
+from **jcopml.pipeline** import **num_pipe, cat_pipe**
+
+from **jcopml.plot** import **plot_missing_value**
+
+from **jcopml.feature_importance** import **mean_score_decrease**
+
+from **sklearn.svm** import **SVC**
+
+from **sklearn.model_selection** import **GridSearchCV**
+
+from **jcopml.tuning** import **grid_search_params as gsp**
 
 
 # Import Dataset
